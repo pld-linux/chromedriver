@@ -1,4 +1,5 @@
 Summary:	WebDriver for Google Chrome
+Summary(pl.UTF-8):	Interfejs WebDriver do przeglądarki Google Chrome
 Name:		chromedriver
 Version:	2.37
 Release:	1
@@ -15,14 +16,16 @@ WebDriver is an open source tool for automated testing of webapps
 across many browsers. It provides capabilities for navigating to web
 pages, user input, JavaScript execution, and more.
 
+%description -l pl.UTF-8
+WebDriver to otwarte narzędzie do automatycznego testowania aplikacji
+WWW w różnych przeglądarkach. Ma możliwość nawigowania po stronach
+WWW, wprowadzania danych użytkownika, wykonywania JavaScriptu itd.
+
 %prep
 %setup -q -c
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 cp -p chromedriver $RPM_BUILD_ROOT%{_bindir}
