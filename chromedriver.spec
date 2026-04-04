@@ -1,8 +1,9 @@
+%undefine	_debugsource_packages
 Summary:	WebDriver for Google Chrome
 Summary(pl.UTF-8):	Interfejs WebDriver do przeglądarki Google Chrome
 Name:		chromedriver
 Version:	2.37
-Release:	2
+Release:	3
 License:	Distributable
 Group:		Applications
 Source0:	https://chromedriver.storage.googleapis.com/%{version}/%{name}_linux64.zip
